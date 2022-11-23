@@ -357,3 +357,8 @@ LRESULT CALLBACK WindowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lPara
     if (!wasHandled) { result = DefWindowProc (hWnd, message, wParam, lParam); }
     return result;
 }
+
+// clang-cl -c -Z7 -o helloengine_d3d.obj helloengine_d3d.cpp
+// link -debug user32.lib d3d11.lib d3dcompiler.lib helloengine_d3d.obj
+
+// clang -l user32.lib -l d3d11.lib -l d3dcompiler.lib -o helloengine_d3d.exe helloengine_d3d.cpp
