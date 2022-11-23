@@ -92,4 +92,5 @@ int main(void) {
 
 	return 0;
 }
-	
+
+// clang -l xcb ./helloengine_xcb.c
