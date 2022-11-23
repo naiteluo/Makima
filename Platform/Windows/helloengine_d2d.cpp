@@ -263,3 +263,7 @@ LRESULT CALLBACK WindowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lPara
 }
 
 // clang -l user32.lib -l ole32.lib -l d2d1.lib -o helleongine_d2d.exe helloengine_d2d.cpp
+
+// clang-cl -c -Z7 -o helleongine_d2d.obj helleongine_d2d.cpp
+// link -debug user32.lib ole32.lib d2d1.lib helleongine_d2d.obj
+// devenv /debug helloengine_d2d.exe

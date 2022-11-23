@@ -34,3 +34,6 @@
 c
 .vs
 out
+
+*.ilk
+*.pdb
