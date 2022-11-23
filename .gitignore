@@ -37,3 +37,6 @@ out
 
 *.ilk
 *.pdb
+
+*.pso
+*.vso
