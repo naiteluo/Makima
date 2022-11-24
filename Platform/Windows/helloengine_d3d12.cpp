@@ -606,3 +606,5 @@ LRESULT CALLBACK WindowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lPara
     if (!wasHandled) { result = DefWindowProc (hWnd, message, wParam, lParam); }
     return result;
 }
+
+// cl /EHsc helloengine_d3d12.cpp user32.lib d3d12.lib dxgi.lib d3dcompiler.lib
